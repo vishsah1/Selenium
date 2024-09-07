@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="functional test suite">
+<test name="functionalTesting">
+<classes>
+<class name = "">
+
+
+</class>
+</classes>
+</test>
+</suite>

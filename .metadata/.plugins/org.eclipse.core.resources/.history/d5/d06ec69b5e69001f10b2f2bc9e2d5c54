@@ -1,0 +1,23 @@
+package datePicker;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class dob {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String expectedYear = "1990";
+		String expectedMonth = "November 2024";
+		String expectedDate = "29";
+		System.setProperty("driver.chrome.driver", "D:\\Selenium\\BrowserDrivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.globalsqa.com/demo-site/datepicker/#Simple%20Date%20Picker");
+		
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//input[@id='datepicker']")).click();
+
+	}
+
+}

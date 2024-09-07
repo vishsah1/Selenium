@@ -1,0 +1,10 @@
+package maven.Logger;
+
+public class loggerLog {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,33 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
+public class scrollTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("driver.chrome.driver", "D:\\Selenium\\BrowserDrivers\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://datatables.net/examples/basic_init/multiple_tables.html");
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement element = driver.findElement(By.linkText("Plug-ins"));
+		
+		//Srcoll horizontal-vertical
+		//js.executeScript("arguments[0].scrollIntoView();", element);
+		
+		//Scroll_by_pixcel
+		//js.executeScript("window.scrollBy(0,5000)");
+		
+		Thread.sleep(5000);
+		
+		//scroll_to_bottom
+		js.executeScript( "window.scrollTo(0,document.body.scrollHeight)");
+		
+
+	}
+
+}

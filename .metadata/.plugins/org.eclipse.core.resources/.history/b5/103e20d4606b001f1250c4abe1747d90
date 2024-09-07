@@ -1,0 +1,42 @@
+package dropDown;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class dynamicDropDown {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String sourceCity = "Patna";
+		System.setProperty("driver.chrome.driver", "D:\\Selenium\\BrowserDrivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.goibibo.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		driver.findElement(By.xpath("//span[@class='logSprite icClose']")).click();
+		
+		driver.findElement(By.xpath("//p[@class='sc-12foipm-6 erPfRs']")).click();
+		driver.findElement(By.xpath("//div[@class='sc-12foipm-25 fbAAhv']/input[@type='text']")).sendKeys(sourceCity);
+	      
+		List<WebElement> listedCity = driver.findElements(By.xpath("//span[@class='autoCompleteTitle']"));
+		System.out.println(listedCity.size());
+		
+		for(WebElement e:listedCity)
+		{
+			if(e.getText().equals(sourceCity))
+			{
+				e.click();
+				break;
+			}
+			
+		}
+		
+
+	}
+
+}

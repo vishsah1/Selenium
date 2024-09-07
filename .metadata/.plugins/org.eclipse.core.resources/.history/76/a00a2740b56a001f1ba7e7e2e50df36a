@@ -1,0 +1,39 @@
+package datePicker;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class method4 {
+
+	public static void main(String[] args) {
+		
+		String expectedYear = "2024";
+		String expectedMonth = "September";
+		String expectedDate = "11";
+		System.setProperty("driver.chrome.driver", "D:\\Selenium\\BrowserDrivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.goibibo.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		driver.findElement(By.xpath("//span[@class='logSprite icClose']")).click();
+		
+		 WebElement e = driver.findElement(By.xpath("//*[@id='content']/iframe"));
+	      driver.switchTo().frame(e);
+	      
+		driver.findElement(By.xpath("//span[@class='sc-12foipm-8 eXKWBG fswDownArrow']")).click();
+				
+				
+		String calMonth = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
+		String calYear = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
+
+		while(!driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText().contains(expectedMonth))
+		{
+			
+		}
+	}
+
+}

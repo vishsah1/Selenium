@@ -1,0 +1,47 @@
+package myPackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import java.time.Duration;
+import java.util.List;
+
+public class rough{
+
+	public static void main(String[] args){
+
+		System.setProperty("driver.chrome.drive","path of chrome driver");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.hyrtutorials.com/p/calendar-practice.html");
+
+		System.out.println(driver.getTitle());
+
+		driver.getCurrentUrl();
+		driver.getPageSource();
+		
+		WebElement go = driver.findElement(By.xpath("//input[@id='third_date_picker']")).click();
+
+		WebElement slt = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+
+		Select dp = new Select(slt);
+//		dp.isDisplayed();
+		List<WebElement> op = dp.getOptions();
+		for(WebElement ee:op)
+		{
+			System.out.println(ee.getText());
+		}
+		Boolean b = dp.isMultiple();
+		System.out.println(b);
+		dp.selectByVisibleText("Nov");
+		
+		driver.quit();
+	}
+
+
+
+}

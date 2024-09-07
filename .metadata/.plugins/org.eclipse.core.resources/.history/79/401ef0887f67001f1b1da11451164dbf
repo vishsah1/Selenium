@@ -1,0 +1,23 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
+public class scrollTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("driver.chrome.driver", "D:\\Selenium\\BrowserDrivers\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://testautomationpractice.blogspot.com/");
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement element = driver.findElement(By.linkText("Plug-ins"));
+		js.executeScript("arguments[0].scrollIntoView();", element);
+		
+
+	}
+
+}
