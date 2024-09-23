@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +23,7 @@ public class brokenLink {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://play309.atmegame.com/?gad_source=1&gclid=CjwKCAjwlbu2BhA3EiwA3yXyuznpiGz_24qE7J8tC1TZ9uFKC7l-rkwqGuHiwN_RAXO_Hpdl-w3lexoCodgQAvD_BwE");
 		

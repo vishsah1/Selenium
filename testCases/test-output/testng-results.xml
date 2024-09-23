@@ -1,68 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-07T11:10:45Z" name="Default suite" finished-at="2024-09-07T11:11:06Z" duration-ms="21471">
+  <suite started-at="2024-09-23T00:41:10 IST" name="Default suite" finished-at="2024-09-23T00:41:24 IST" duration-ms="14514">
     <groups>
     </groups>
-    <test started-at="2024-09-07T11:10:45Z" name="Default test" finished-at="2024-09-07T11:11:06Z" duration-ms="21471">
-      <class name="myPackage.innovationCount">
-        <test-method signature="verifyLogin(org.testng.ITestContext)[pri:0, instance:myPackage.innovationCount@6b695b06]" started-at="2024-09-07T11:10:45Z" name="verifyLogin" finished-at="2024-09-07T11:10:50Z" duration-ms="4919" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@28194a50]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-09-23T00:41:10 IST" name="Default test" finished-at="2024-09-23T00:41:24 IST" duration-ms="14514">
+      <class name="myPackage.verifyTitle">
+        <test-method signature="title()[pri:0, instance:myPackage.verifyTitle@222545dc]" started-at="2024-09-23T00:41:10 IST" name="title" finished-at="2024-09-23T00:41:24 IST" duration-ms="14475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(org.testng.ITestContext)[pri:0, instance:myPackage.innovationCount@6b695b06]" started-at="2024-09-07T11:10:50Z" name="verifyLogin" finished-at="2024-09-07T11:10:54Z" duration-ms="4265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@28194a50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(org.testng.ITestContext)[pri:0, instance:myPackage.innovationCount@6b695b06]" started-at="2024-09-07T11:10:54Z" name="verifyLogin" finished-at="2024-09-07T11:10:58Z" duration-ms="4123" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@28194a50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(org.testng.ITestContext)[pri:0, instance:myPackage.innovationCount@6b695b06]" started-at="2024-09-07T11:10:58Z" name="verifyLogin" finished-at="2024-09-07T11:11:02Z" duration-ms="4210" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@28194a50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(org.testng.ITestContext)[pri:0, instance:myPackage.innovationCount@6b695b06]" started-at="2024-09-07T11:11:02Z" name="verifyLogin" finished-at="2024-09-07T11:11:06Z" duration-ms="3926" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@28194a50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-      </class> <!-- myPackage.innovationCount -->
+        </test-method> <!-- title -->
+      </class> <!-- myPackage.verifyTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

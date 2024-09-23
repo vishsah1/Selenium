@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Vish Sah\eclipse-workspace\testCases"/>
 			<item value="C:\Users\Vish Sah\eclipse-workspace\TestNg\src\test\java"/>
 			<item value="C:\Users\Vish Sah\eclipse-workspace\Demo\src\myPackage"/>
 		</list>
@@ -31,14 +32,23 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Maven.abc"/>
+			<item value="maven.logii"/>
+			<item value="maven.mystore_v1"/>
+			<item value="maven.myStoreV1"/>
+			<item value="maven.Logger"/>
 			<item value="maven.testCases"/>
 			<item value="Maven.TestNG"/>
 		</list>
 		<list key="groupId">
-			<item value="maven"/>
 			<item value="Maven"/>
+			<item value="maven"/>
 		</list>
 		<list key="artifactId">
+			<item value="abc"/>
+			<item value="Logger"/>
+			<item value="mystore-v1"/>
+			<item value="myStoreV1"/>
 			<item value="testCases"/>
 			<item value="TestNG"/>
 		</list>

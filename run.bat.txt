@@ -1,0 +1,2 @@
+cd C:\Users\Vish Sah\eclipse-workspace\mystore-v1
+mvn test

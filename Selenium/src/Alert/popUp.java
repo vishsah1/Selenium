@@ -1,3 +1,4 @@
+
 package Alert;
 
 import org.openqa.selenium.By;
@@ -30,11 +31,6 @@ public class popUp {
 		
 		driver.findElement(By.xpath("//input[@id='promptexample']")).click();
 		driver.switchTo().alert().sendKeys("vish");
-		driver.switchTo().alert().accept();		
-		
-		
-		
-
+		driver.switchTo().alert().accept();
 	}
-
 }
