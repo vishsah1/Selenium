@@ -5,7 +5,7 @@ public class NoOfCharactersInAString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String str = "asdfghj";
+		String str = "asdfghj ghjk";
 		int count =0;
 		char ch;
 		
@@ -16,6 +16,7 @@ public class NoOfCharactersInAString {
 			{
 				count++;
 			}
+			
 		}
 		System.out.println(count);
 		

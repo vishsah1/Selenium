@@ -1,5 +1,6 @@
 package dropDown;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -21,6 +22,7 @@ public class dropDown {
 		
 		WebElement counrtyList = driver.findElement(By.tagName("select"));
 		
+		
 		Select dropdown = new Select(counrtyList);
 		
 		dropdown.selectByVisibleText("Cuba");
@@ -35,9 +37,12 @@ public class dropDown {
 		}
 		
 		List<WebElement> allList = dropdown.getOptions();
+		int a = allList.size();
+		System.out.println(a);
 		
-		for(WebElement el:allList) {
-			System.out.println(el.getText());
-		}
+		
+//		for(WebElement el:allList) {
+//			System.out.println(el.getText());
+//		}
 	}
 }

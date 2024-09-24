@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Project_Object_Model.LoginPageRepoPageFactory"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
     <fullyQualifiedTypeName name="com.github.dockerjava.api.model.Driver"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.mystore.pageobject.searchPage"/>
     <fullyQualifiedTypeName name="com.mystore.pageobject.loginAccount"/>
     <fullyQualifiedTypeName name="com.sun.tools.sjavac.Log"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
